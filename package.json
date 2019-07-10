@@ -1,33 +1,80 @@
 {
-  "name": "nodejs-pptx",
-  "version": "1.0.0",
-  "description": "Generate PPTX files on the server-side with JavaScript.",
-  "license": "MIT",
-  "repository": {
+  "_from": "git+https://github.com/heavysixer/node-pptx.git#ba985ed42d14324bcc394a806796e4ceab5e8ff1",
+  "_id": "node-pptx@0.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/node-pptx",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "git+https://github.com/heavysixer/node-pptx.git"
+    "raw": "https://github.com/heavysixer/node-pptx#ba985ed42d14324bcc394a806796e4ceab5e8ff1",
+    "rawSpec": "https://github.com/heavysixer/node-pptx#ba985ed42d14324bcc394a806796e4ceab5e8ff1",
+    "saveSpec": "git+https://github.com/heavysixer/node-pptx.git#ba985ed42d14324bcc394a806796e4ceab5e8ff1",
+    "fetchSpec": "https://github.com/heavysixer/node-pptx.git",
+    "gitCommittish": "ba985ed42d14324bcc394a806796e4ceab5e8ff1"
   },
-  "author": "Mark Daggett <mark@humansized.com> (github.com/heavysixer)",
-  "contributors": [
-    "Greg Dolley (github.com/gregdolley)"
+  "_requiredBy": [
+    "#USER",
+    "/"
   ],
+  "_resolved": "git+https://github.com/heavysixer/node-pptx.git#ba985ed42d14324bcc394a806796e4ceab5e8ff1",
+  "_spec": "https://github.com/heavysixer/node-pptx#ba985ed42d14324bcc394a806796e4ceab5e8ff1",
+  "_where": "C:\\ProgramProjects\\web\\presentex\\node-pres",
+  "author": {
+    "name": "Mark Daggett",
+    "email": "mark@humansized.com",
+    "url": "github.com/heavysixer"
+  },
+  "bugs": {
+    "url": "https://github.com/heavysixer/node-pptx/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Greg Dolley",
+      "url": "github.com/gregdolley"
+    }
+  ],
+  "dependencies": {
+    "async": "^1.5.2",
+    "image-size": "^0.6.2",
+    "jszip": "^3.1.5",
+    "request": "^2.83.0",
+    "xml-js": "^1.5.2",
+    "xml2js": "^0.4.19"
+  },
+  "deprecated": false,
+  "description": "Generate PPTX files on the server-side with JavaScript.",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-preset-env": "^1.6.1",
+    "doctoc": "^1.3.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "prettier": "^1.7.4",
+    "superagent": "^3.8.1",
+    "supertest": "^3.0.0",
+    "tar": "^4.4.2"
+  },
   "engines": {
     "node": ">=4"
-  },
-  "scripts": {
-    "test": "jest",
-    "eslint-config": "eslint --print-config .eslintrc",
-    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
-    "lint": "./node_modules/eslint/bin/eslint.js --ext .js src",
-    "test-with-coverage": "nyc jest"
-  },
-  "jest": {
-    "verbose": true,
-    "collectCoverage": true
   },
   "files": [
     "index.js"
   ],
+  "homepage": "https://github.com/heavysixer/node-pptx#readme",
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true
+  },
   "keywords": [
     "javascript",
     "javascript-create-powerpoint",
@@ -49,39 +96,18 @@
     "pptx",
     "presentations"
   ],
-  "dependencies": {
-    "async": "^1.5.2",
-    "image-size": "^0.6.2",
-    "jszip": "^3.1.5",
-    "request": "^2.83.0",
-    "xml-js": "^1.5.2",
-    "xml2js": "^0.4.19"
+  "license": "MIT",
+  "name": "node-pptx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heavysixer/node-pptx.git"
   },
-  "devDependencies": {
-    "doctoc": "^1.3.0",
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^8.0.1",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.10.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-config-prettier": "^2.6.0",
-    "eslint-loader": "^1.9.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
-    "jest": "^21.2.1",
-    "nodemon": "^1.12.1",
-    "prettier": "^1.7.4",
-    "superagent": "^3.8.1",
-    "supertest": "^3.0.0",
-    "tar": "^4.4.2"
+  "scripts": {
+    "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "eslint-config": "eslint --print-config .eslintrc",
+    "lint": "./node_modules/eslint/bin/eslint.js --ext .js src",
+    "test": "jest",
+    "test-with-coverage": "nyc jest"
   },
-  "bugs": {
-    "url": "https://github.com/heavysixer/node-pptx/issues"
-  },
-  "homepage": "https://github.com/heavysixer/node-pptx#readme",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  }
+  "version": "0.0.1"
 }
